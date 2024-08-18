@@ -4,7 +4,7 @@ import HomePage from "./components/homepage/homepage";
 import HistoryPage from "./components/historypage/historypage";
 import NewBookingPage from "./components/newbookingpage/newbookingpage";
 import ProfilePage from "./components/profilepage/profilepage";
-import MenuBar, { Menu } from "./components/menubar";
+import MenuBar, { Menu } from "../../shared/components/menubar";
 
 
 const menu:Menu[] = [
@@ -34,11 +34,11 @@ const menu:Menu[] = [
     }
 ]
 const Home = ()=>{
-    const [selectedMenu, setSelectedMenu] = useState()
+    const [selectedMenu, setSelectedMenu] = useState<Menu>()
     return(
-        <div>
-            
-            <MenuBar menuList={menu} defaultSelected="home" onChange={setSelectedMenu}/>
+        <div className="bg-slate-100 h-screen">
+            {selectedMenu?.component}
+            <MenuBar menuList={menu} defaultSelected={menu[0]} onChange={setSelectedMenu}/>
         </div>
     )
 }

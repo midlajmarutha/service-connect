@@ -1,4 +1,4 @@
-import { ServiceProvider } from "./types/types";
+import { JobInfo, ServiceProvider } from "./types/types";
 
 export const servicePoviders:ServiceProvider[] = [
     {
@@ -36,5 +36,38 @@ export const servicePoviders:ServiceProvider[] = [
         state: "Kerala",
         location: "",
         services: ["Construction"]
+    }
+]
+
+const jobs:JobInfo[] = [
+    {
+        service:"Plumbing",
+        price:"250/h",
+        provider:servicePoviders[0],
+        location:"Malappuram"
+    },
+    {
+        service:"Electric device repairing",
+        price:"200/h",
+        provider:servicePoviders[3],
+        location:"Kochi"
+    },
+    {
+        service:"Software Development",
+        price:"350/h",
+        provider:servicePoviders[2],
+        location:"Kottayam"
+    },
+    {
+        service:"Plumbing",
+        price:"250/h",
+        provider:servicePoviders[1],
+        location:"Thiruvanandapuram"
+    },
+    {
+        service:"Car Washing",
+        price:"250",
+        provider:servicePoviders[2],
+        location:"Palakkadu"
     }
 ]

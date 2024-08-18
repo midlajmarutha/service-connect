@@ -13,3 +13,10 @@ export type ServiceProvider = {
     services:string[];
     imageurl?:string;
 }
+
+export type JobInfo = {
+    service:string;
+    price:string;
+    provider:ServiceProvider;
+    location:string;
+}
