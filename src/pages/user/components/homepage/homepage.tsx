@@ -1,5 +1,8 @@
 import { MenuIcon } from 'lucide-react'
 import AdBanner from './components/AdBanner'
+import JobCard from '@/shared/components/jobcard'
+import { jobs } from '@/data'
+import SearchBar from '@/shared/components/searchbar'
 
 const HomePage = () => {
   return (
@@ -12,7 +15,22 @@ const HomePage = () => {
           <h1>ServiceConnect</h1>
         </div>
       </div>
+      <SearchBar/>
       <AdBanner/>
+      <div className='m-4'>
+        <div className='font-poppins font-bold'>
+          Top services
+        </div>
+        <div className="flex gap-1 overflow-x-scroll">
+          {
+            jobs.map((info,index)=>{
+              return(
+                <JobCard info={info} key={index}/>
+              )
+            })
+          }
+        </div>
+      </div>
     </div>
   )
 }

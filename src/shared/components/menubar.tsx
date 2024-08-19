@@ -18,7 +18,8 @@ const MenuBar = ({menuList, defaultSelected, onChange}:{menuList:Menu[], default
                     return(
                         <div 
                             className={`p-2 rounded-full transition-all ${selectedMenu.menu === menu.menu ? "text-blue-700 bg-blue-100": "hover:bg-gray-100 hover:text-gray-700"}`}
-                            onClick={()=>{setSelectedMenu(menu)}}>
+                            onClick={()=>{setSelectedMenu(menu)}}
+                            key={index}>
                             {menu.icon}
                         </div>
                     )

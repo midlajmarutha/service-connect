@@ -39,7 +39,7 @@ export const servicePoviders:ServiceProvider[] = [
     }
 ]
 
-const jobs:JobInfo[] = [
+export const jobs:JobInfo[] = [
     {
         service:"Plumbing",
         price:"250/h",
