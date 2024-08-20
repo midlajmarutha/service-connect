@@ -1,4 +1,4 @@
-import { JobInfo, ServiceProvider } from "./types/types";
+import { ServiceInfo, ServiceHistory, ServiceProvider } from "./types/types";
 
 export const servicePoviders:ServiceProvider[] = [
     {
@@ -39,7 +39,7 @@ export const servicePoviders:ServiceProvider[] = [
     }
 ]
 
-export const jobs:JobInfo[] = [
+export const services:ServiceInfo[] = [
     {
         service:"Plumbing",
         price:"250/h",
@@ -69,5 +69,57 @@ export const jobs:JobInfo[] = [
         price:"250",
         provider:servicePoviders[2],
         location:"Palakkadu"
+    }
+]
+
+export const servicehistory:ServiceHistory[] = [
+    {
+        service: services[1],
+        date:"11/08/2024",
+        provider: servicePoviders[2],
+        time:"10:00 AM",
+        status:"Pending"
+    },
+    {
+        service: services[3],
+        date:"11/08/2024",
+        provider: servicePoviders[1],
+        time:"10:00 AM",
+        status:"Approved"
+    },
+    {
+        service: services[1],
+        date:"11/08/2024",
+        provider: servicePoviders[2],
+        time:"10:00 AM",
+        status:"Pending"
+    },
+    {
+        service: services[1],
+        date:"11/08/2024",
+        provider: servicePoviders[3],
+        time:"10:00 AM",
+        status:"Approved"
+    },
+    {
+        service: services[2],
+        date:"11/08/2024",
+        provider: servicePoviders[2],
+        time:"10:00 AM",
+        status:"Requested"
+    },
+    {
+        service: services[3],
+        date:"11/08/2024",
+        provider: servicePoviders[1],
+        time:"10:00 AM",
+        status:"Approved"
+    },
+    {
+        service: services[2],
+        date:"11/08/2024",
+        provider: servicePoviders[1],
+        time:"10:00 AM",
+        status:"Pending"
     }
 ]

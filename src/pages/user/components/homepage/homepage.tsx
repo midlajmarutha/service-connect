@@ -1,36 +1,49 @@
-import { MenuIcon } from 'lucide-react'
 import AdBanner from './components/AdBanner'
-import JobCard from '@/shared/components/jobcard'
-import { jobs } from '@/data'
+import { services } from '@/data'
 import SearchBar from '@/shared/components/searchbar'
+import { FocusEvent, useState } from 'react'
+import Header from '@/shared/components/header'
+import ServiceCard from '@/shared/components/servicecard'
 
 const HomePage = () => {
+  const [searchFocus, setSearchFocus] = useState<boolean>(false)
+  function searchbarFocus(event:FocusEvent){
+    console.log(event.type)
+    switch (event.type){
+      case "focus":
+        setSearchFocus(true)
+        break;
+      case "blur":
+        setSearchFocus(false)
+        break;
+    }
+  }
   return (
     <div>
-      <div className="flex gap-2 p-3 items-center">
-        <div className='flex p-1 text-blue-700 hover:bg-blue-100 transition-all rounded-md'>
-          <MenuIcon/>
+      {
+        !searchFocus && <Header/>
+      }
+      <SearchBar onFocus={searchbarFocus}/>
+      {
+        !searchFocus &&
+        <>
+        <AdBanner/>
+        <div className='m-4'>
+          <div className='font-poppins font-bold'>
+            Top services
+          </div>
+          <div className="flex gap-1 overflow-x-scroll">
+            {
+              services.map((info,index)=>{
+                return(
+                  <ServiceCard info={info} key={index}/>
+                )
+              })
+            }
+          </div>
         </div>
-        <div className='font-medium text-l font-poppins'>
-          <h1>ServiceConnect</h1>
-        </div>
-      </div>
-      <SearchBar/>
-      <AdBanner/>
-      <div className='m-4'>
-        <div className='font-poppins font-bold'>
-          Top services
-        </div>
-        <div className="flex gap-1 overflow-x-scroll">
-          {
-            jobs.map((info,index)=>{
-              return(
-                <JobCard info={info} key={index}/>
-              )
-            })
-          }
-        </div>
-      </div>
+        </>
+      }
     </div>
   )
 }

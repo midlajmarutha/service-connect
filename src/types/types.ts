@@ -14,9 +14,17 @@ export type ServiceProvider = {
     imageurl?:string;
 }
 
-export type JobInfo = {
+export type ServiceInfo = {
     service:string;
     price:string;
     provider:ServiceProvider;
     location:string;
+}
+
+export type ServiceHistory = {
+    service: ServiceInfo,
+    date: string,
+    provider: ServiceProvider,
+    time: string,
+    status: "Requested" | "Approved" | "Pending"
 }

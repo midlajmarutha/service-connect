@@ -18,7 +18,7 @@ const AdBanner = () => {
           </div>
         </div>
         <div className='flex justify-center p-2'>
-          <img className='' src="public/bannerimage.svg" alt="image of painter" />
+          <img className='' src="/bannerimage.svg" alt="image of painter" />
         </div>
       </div>
     </div>

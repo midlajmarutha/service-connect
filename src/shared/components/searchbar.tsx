@@ -3,7 +3,7 @@ import React, { FocusEventHandler, FormEventHandler, MouseEventHandler } from 'r
 
 const SearchBar = ({onSearch, onValueChange, onFocus}:{onSearch?:MouseEventHandler,onValueChange?:FormEventHandler, onFocus?:FocusEventHandler}) => {
   return (
-    <div className='m-4 flex shadow-sm'>
+    <div className='m-4 flex shadow-sm transition-all'>
         <div className='h-8 w-8 flex items-center justify-center text-blue-700 bg-white hover:bg-gray-100 hover:text-gray-700 transition-all cursor-pointer rounded-l-md'>
             <SearchIcon size={"18px"}/>
         </div>

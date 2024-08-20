@@ -1,7 +1,7 @@
-import { JobInfo } from '@/types/types'
+import { ServiceInfo } from '@/types/types'
 import React from 'react'
 
-const JobCard = ({info}:{info:JobInfo}) => {
+const ServiceCard = ({info}:{info:ServiceInfo}) => {
   return (
     <div className='flex flex-col min-w-48 w-48 rounded-md font-poppins bg-white'>
       <div className='h-24 bg-slate-500 rounded-t-md'>
@@ -27,4 +27,4 @@ const JobCard = ({info}:{info:JobInfo}) => {
   )
 }
 
-export default JobCard
+export default ServiceCard
