@@ -21,6 +21,9 @@ const HistoryCard = ({item}:{item:ServiceHistory}) => {
         <div>
           {item.status}
         </div>
+        <div>
+          {item.service.price}
+        </div>
       </div>
     </div>
   )
