@@ -5,6 +5,7 @@ export type User = {
 
 export type ServiceProvider = {
     username:string;
+    id:string;
     email:string;
     mobile:string;
     country:string;

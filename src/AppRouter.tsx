@@ -1,8 +1,9 @@
 import React from 'react'
 import {RouterProvider, createBrowserRouter} from 'react-router-dom'
-import Home from './pages/user';
+import Home from './pages/user/home';
 import Signin from './pages/auth/signin';
 import Signup from './pages/auth/signup';
+import ServiceProvider from './pages/user/components/serviceprovider';
 
 function AppRouter(){
   const router = createBrowserRouter([
@@ -17,6 +18,10 @@ function AppRouter(){
     {
       path:"auth/signup",
       element:<Signup/>
+    },
+    {
+      path:"provider/:id",
+      element:<ServiceProvider/>
     }
   ])
   return(

@@ -3,6 +3,7 @@ import { ServiceInfo, ServiceHistory, ServiceProvider } from "./types/types";
 export const servicePoviders:ServiceProvider[] = [
     {
         username: "James",
+        id:"1",
         email: "james@gmail.com",
         mobile: "+917809478308",
         country: "India",
@@ -12,6 +13,7 @@ export const servicePoviders:ServiceProvider[] = [
     },
     {
         username: "Hari",
+        id:"2",
         email: "Hari@gmail.com",
         mobile: "+917842478308",
         country: "India",
@@ -21,6 +23,7 @@ export const servicePoviders:ServiceProvider[] = [
     },
     {
         username: "Adhil",
+        id:"3",
         email: "adhil@gmail.com",
         mobile: "+917805471388",
         country: "India",
@@ -30,6 +33,7 @@ export const servicePoviders:ServiceProvider[] = [
     },
     {
         username: "Suresh",
+        id:"4",
         email: "suresh@gmail.com",
         mobile: "+917209878308",
         country: "India",
