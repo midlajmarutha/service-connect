@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonWithArrow from "../components/button";
+import ButtonWithArrow from "../../../shared/components/button";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 

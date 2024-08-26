@@ -1,5 +1,5 @@
 import { servicePoviders } from "@/data";
-import ButtonWithArrow from "@/pages/auth/components/button";
+import ButtonWithArrow from "@/shared/components/button";
 import { BoltIcon, ChevronLeftIcon, StarIcon } from "lucide-react";
 import React from "react";
 import { useParams } from "react-router-dom";
@@ -76,30 +76,31 @@ const ServiceProvider = () => {
                         <h2 className="font-semibold text-sm">Reviews</h2>
                         <div className="text-sm p-2">
                             <div className="flex gap-1 items-center">
-                                <h3 className="font-semibold text-xs text-gray-600">John</h3>
+                                <h3 className="font-semibold text-xs text-gray-600">
+                                    John
+                                </h3>
                                 <div className="flex">
-                                <StarIcon
-                                    size={15}
-                                    stroke="#ffc000"
-                                    fill="#ffc000"
-                                />
-                                <StarIcon
-                                    size={15}
-                                    stroke="#ffc000"
-                                    fill="#ffc000"
-                                />
-                                <StarIcon
-                                    size={15}
-                                    stroke="#ffc000"
-                                    fill="#ffc000"
-                                />
-                                <StarIcon
-                                    size={15}
-                                    stroke="#ffc000"
-                                    fill="#ffc000"
-                                />
+                                    <StarIcon
+                                        size={15}
+                                        stroke="#ffc000"
+                                        fill="#ffc000"
+                                    />
+                                    <StarIcon
+                                        size={15}
+                                        stroke="#ffc000"
+                                        fill="#ffc000"
+                                    />
+                                    <StarIcon
+                                        size={15}
+                                        stroke="#ffc000"
+                                        fill="#ffc000"
+                                    />
+                                    <StarIcon
+                                        size={15}
+                                        stroke="#ffc000"
+                                        fill="#ffc000"
+                                    />
                                 </div>
-                                
                             </div>
                             <p className="font-light text-xs">
                                 Lorem ipsum, dolor sit amet consectetur
@@ -108,30 +109,31 @@ const ServiceProvider = () => {
                         </div>
                         <div className="text-sm p-2">
                             <div className="flex gap-1 items-center">
-                                <h3 className="font-semibold text-xs text-gray-600">Suresh</h3>
+                                <h3 className="font-semibold text-xs text-gray-600">
+                                    Suresh
+                                </h3>
                                 <div className="flex">
-                                <StarIcon
-                                    size={15}
-                                    stroke="#ffc000"
-                                    fill="#ffc000"
-                                />
-                                <StarIcon
-                                    size={15}
-                                    stroke="#ffc000"
-                                    fill="#ffc000"
-                                />
-                                <StarIcon
-                                    size={15}
-                                    stroke="#ffc000"
-                                    fill="#ffc000"
-                                />
-                                <StarIcon
-                                    size={15}
-                                    stroke="#ffc000"
-                                    fill="#ffc000"
-                                />
+                                    <StarIcon
+                                        size={15}
+                                        stroke="#ffc000"
+                                        fill="#ffc000"
+                                    />
+                                    <StarIcon
+                                        size={15}
+                                        stroke="#ffc000"
+                                        fill="#ffc000"
+                                    />
+                                    <StarIcon
+                                        size={15}
+                                        stroke="#ffc000"
+                                        fill="#ffc000"
+                                    />
+                                    <StarIcon
+                                        size={15}
+                                        stroke="#ffc000"
+                                        fill="#ffc000"
+                                    />
                                 </div>
-                                
                             </div>
                             <p className="font-light text-xs">
                                 Lorem ipsum, dolor sit amet consectetur

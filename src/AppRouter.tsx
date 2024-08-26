@@ -3,7 +3,9 @@ import {RouterProvider, createBrowserRouter} from 'react-router-dom'
 import Home from './pages/user/home';
 import Signin from './pages/auth/signin';
 import Signup from './pages/auth/signup';
-import ServiceProvider from './pages/user/components/serviceprovider';
+import ServiceProvider from './pages/user/pages/serviceprovider';
+import NewBookingPage from './pages/user/pages/newbookingpage/newbookingpage';
+
 
 function AppRouter(){
   const router = createBrowserRouter([
@@ -22,6 +24,10 @@ function AppRouter(){
     {
       path:"provider/:id",
       element:<ServiceProvider/>
+    },
+    {
+      path:"booking/:id",
+      element:<NewBookingPage/>
     }
   ])
   return(
