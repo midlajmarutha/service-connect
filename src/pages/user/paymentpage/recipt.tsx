@@ -1,11 +1,11 @@
 import PageHeader from '@/components/shared/page-header'
 import { Button } from '@/components/ui/button'
-import { BadgeCheck } from 'lucide-react'
+import { BadgeCheck, DownloadIcon, PenIcon, Share2Icon } from 'lucide-react'
 import React from 'react'
 
 const ReciptPage = () => {
   return (
-    <div className='flex flex-col p-3 font-poppins'>
+    <div className='flex flex-col p-3 font-poppins container'>
       <PageHeader pageTitle='E-Recipt'/>
       <div className='mt-16 flex flex-col items-center'>
         <div className='flex gap-1'>
@@ -106,7 +106,9 @@ const ReciptPage = () => {
         </div>
         </div>
         <div className='mt-8'>
-            <Button variant={"outline"}>Download recipt</Button>
+            <Button variant={"outline"}><Share2Icon/></Button>
+            <Button variant={"outline"}><PenIcon/></Button>
+            <Button variant={"outline"}><DownloadIcon/></Button>
         </div>
       </div>
     </div>
