@@ -38,7 +38,7 @@ function AppRouter(){
       element:<PaymentPage/>,
     },
     {
-      path:"/payment/addcrd",
+      path:"/payment/addcard",
       element:<AddCard/>
     }
   ])
