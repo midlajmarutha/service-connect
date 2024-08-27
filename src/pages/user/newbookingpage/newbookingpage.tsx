@@ -1,4 +1,4 @@
-import ButtonWithArrow from "@/shared/components/button";
+import ButtonWithArrow from "@/components/shared/button";
 import { ChevronLeftIcon } from "lucide-react";
 import React from "react";
 

@@ -1,5 +1,6 @@
-import ButtonWithArrow from "@/shared/components/button";
-import CountrySelector from "@/shared/components/countryselector";
+import ButtonWithArrow from "@/components/shared/button";
+import CountrySelector from "@/components/shared/countryselector";
+import PageHeader from "@/components/shared/page-header";
 import { ChevronLeftIcon } from "lucide-react";
 import React from "react";
 
@@ -9,11 +10,7 @@ const ProfilePage = () => {
     return (
         <div>
             <div className="font-poppins p-3">
-                <div className="flex gap-1 items-center">
-                    <div className="text-blue-700 cursor-pointer">
-                        <ChevronLeftIcon />
-                    </div>
-                </div>
+                <PageHeader pageTitle="Edit Profile"/>
                 <div className="flex flex-col m-4 ">
                     <h1>Edit Profile</h1>
                     <div className="flex flex-col gap-2 py-4 w-full">

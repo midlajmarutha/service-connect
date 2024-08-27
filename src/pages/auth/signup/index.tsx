@@ -1,6 +1,6 @@
 import React, { FormEvent, useState } from "react";
 import { Link, redirect } from "react-router-dom";
-import ButtonWithArrow from "../../../shared/components/button";
+import ButtonWithArrow from "../../../components/shared/button";
 import { Button } from "@/components/ui/button";
 import SignupOTPInput from "./components/otp-input";
 

@@ -1,8 +1,9 @@
 import { servicePoviders } from "@/data";
-import ButtonWithArrow from "@/shared/components/button";
+import ButtonWithArrow from "@/components/shared/button";
 import { BoltIcon, ChevronLeftIcon, StarIcon } from "lucide-react";
 import React from "react";
 import { useParams } from "react-router-dom";
+import PageHeader from "@/components/shared/page-header";
 
 const ServiceProvider = () => {
     const { id } = useParams();
@@ -11,11 +12,7 @@ const ServiceProvider = () => {
 
     return (
         <div className="font-poppins p-3">
-            <div className="flex gap-1 items-center">
-                <div className="text-blue-700 cursor-pointer">
-                    <ChevronLeftIcon />
-                </div>
-            </div>
+            <PageHeader pageTitle="James"/>
             <div className="flex flex-col m-8 shadow-lg">
                 <div className="w-full rounded-t-lg bg-gray-600 h-32 relative">
                     <div className="flex gap-2  absolute -bottom-3 left-3">

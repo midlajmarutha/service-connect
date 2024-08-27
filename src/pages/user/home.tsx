@@ -1,10 +1,10 @@
 import { CircleUserRoundIcon, HistoryIcon, HomeIcon, LucideIcon, PlusCircleIcon } from "lucide-react";
 import React, { useState } from "react";
-import HomePage from "./pages/homepage/homepage";
-import HistoryPage from "./pages/historypage/historypage";
-import NewBookingPage from "./pages/newbookingpage/newbookingpage";
-import ProfilePage from "./pages/profilepage/profilepage";
-import MenuBar, { Menu } from "../../shared/components/menubar";
+import HomePage from "./homepage/homepage";
+import HistoryPage from "./historypage/historypage";
+import NewBookingPage from "./newbookingpage/newbookingpage";
+import ProfilePage from "./profilepage/profilepage";
+import MenuBar, { Menu } from "../../components/shared/menubar";
 
 
 const menu:Menu[] = [

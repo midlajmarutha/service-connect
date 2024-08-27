@@ -1,9 +1,9 @@
 import AdBanner from './components/AdBanner'
 import { services } from '@/data'
-import SearchBar from '@/shared/components/searchbar'
+import SearchBar from '@/components/shared/searchbar'
 import { FocusEvent, useState } from 'react'
-import Header from '@/shared/components/header'
-import ServiceCard from '@/shared/components/servicecard'
+import Header from '@/components/shared/header'
+import ServiceCard from '@/components/shared/servicecard'
 
 const HomePage = () => {
   const [searchFocus, setSearchFocus] = useState<boolean>(false)
