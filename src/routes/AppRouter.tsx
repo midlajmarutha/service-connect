@@ -31,7 +31,7 @@ function AppRouter(){
           element:<HistoryPage/>
         },
         {
-          path:"/newbooking",
+          path:"/new",
           element:<NewBookingPage/>
         },
         {
