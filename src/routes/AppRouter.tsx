@@ -9,6 +9,7 @@ import PaymentPage from '@/pages/user/paymentpage/paymentpage';
 import AddCard from '@/pages/user/paymentpage/addcard-page';
 import ErrorPage from '@/components/shared/error-page';
 import ReciptPage from '@/pages/user/paymentpage/recipt';
+import ProviderDashboard from '@/pages/service-provider/dashboad/provider-dashboard';
 
 
 function AppRouter(){
@@ -45,6 +46,10 @@ function AppRouter(){
     {
       path:"payment/recipt",
       element:<ReciptPage/>
+    },
+    {
+      path:"provider",
+      element:<ProviderDashboard/>
     }
   ])
   return(
