@@ -1,6 +1,5 @@
 import React from 'react'
 import {RouterProvider, createBrowserRouter} from 'react-router-dom'
-import Home from '../pages/user/home';
 import Signin from '../pages/auth/signin';
 import Signup from '../pages/auth/signup';
 import ServiceProvider from '../pages/user/serviceprovider';
@@ -10,14 +9,36 @@ import AddCard from '@/pages/user/paymentpage/addcard-page';
 import ErrorPage from '@/components/shared/error-page';
 import ReciptPage from '@/pages/user/paymentpage/recipt';
 import ProviderDashboard from '@/pages/service-provider/dashboad/provider-dashboard';
+import Layout from '../pages/user/layout';
+import HomePage from '@/pages/user/homepage/homepage';
+import HistoryPage from '@/pages/user/historypage/historypage';
+import ProfilePage from '@/pages/user/profilepage/profilepage';
 
 
 function AppRouter(){
   const router = createBrowserRouter([
     {
       path:"/",
-      element:<Home/>,
-      errorElement:<ErrorPage/>
+      element:<Layout/>,
+      errorElement:<ErrorPage/>,
+      children:[
+        {
+          index:true,
+          element:<HomePage/>
+        },
+        {
+          path:"/history",
+          element:<HistoryPage/>
+        },
+        {
+          path:"/newbooking",
+          element:<NewBookingPage/>
+        },
+        {
+          path:"/profile",
+          element:<ProfilePage/>
+        },
+      ]
     },
     {
       path:"auth/signin",

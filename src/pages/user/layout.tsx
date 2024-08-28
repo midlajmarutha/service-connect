@@ -5,6 +5,7 @@ import HistoryPage from "./historypage/historypage";
 import NewBookingPage from "./newbookingpage/newbookingpage";
 import ProfilePage from "./profilepage/profilepage";
 import MenuBar, { Menu } from "../../components/shared/menubar";
+import { Outlet, useLocation } from "react-router-dom";
 
 
 const menu:Menu[] = [
@@ -33,14 +34,15 @@ const menu:Menu[] = [
         icon:<CircleUserRoundIcon/>
     }
 ]
-const Home = ()=>{
-    const [selectedMenu, setSelectedMenu] = useState<Menu>()
+const Layout = ()=>{
+    const { pathname } = useLocation();
+    const defaultMenu = menu.find(item=>(item.path == pathname))
     return(
         <div className="bg-slate-100 h-screen">
-            {selectedMenu?.component}
-            <MenuBar menuList={menu} defaultSelected={menu[0]} onChange={setSelectedMenu}/>
+            <Outlet/>
+            <MenuBar menuList={menu} defaultSelected={defaultMenu ? defaultMenu : menu[0]} />
         </div>
     )
 }
 
-export default Home;
+export default Layout;
