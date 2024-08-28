@@ -65,8 +65,8 @@ const LineChart = () => {
                 data={data}
                 margin={{right:10, left:10}}
             >
-                <YAxis axisLine={false} tickLine={false} style={{fontFamily:"poppins"}} className="text-blue-600 text-xs"/>
-                <CartesianGrid strokeDasharray="1 1" opacity={0.4} vertical={false}/>
+                <YAxis axisLine={false} tickLine={false} style={{fontFamily:"poppins"}} tick={{fill:"blue"}} className="text-xs"/>
+                <CartesianGrid strokeDasharray="3 5" vertical={false}/>
                 <Tooltip />
                 <Line type="linear" dataKey="pv" stroke="#0000ff" />
             </LineChartContainer>
